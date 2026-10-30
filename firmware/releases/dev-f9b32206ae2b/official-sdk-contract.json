@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "hardware_accessed": false,
+  "timestamp_utc": "2026-10-30T10:12:05.332Z",
+  "scope": "Official SDK + real C config RPC/compiler; host Flash mock; no USB/BLE/GUI acceptance",
+  "source_sha256": {
+    "components/config_store/config_rpc.c": "2d608459428f2b9960d08a3dc6f269c5616e912d3855300c7e645dc651712673",
+    "components/device_services/keymap_model.c": "95ae51b1dd0f7a05b5f2f2a4e41554b0c48213d25bb2069f7d66568656f9db0c",
+    "components/device_services/key_codes.c": "c24f2a41ec15f195aac0401f5e49b2ace80a1b1adae497d7e03fbb7260f2ac8a",
+    "components/device_services/light_engine.c": "c5380fa96d37b7da30f04bb12d283ebafa308374f505378c9953d232d29d79df",
+    "components/device_services/smart_actions.c": "c44dc70b49efe190b43c9fbd0d7594bf12bec9269bc04cb7379ce65eac43e9bc",
+    "components/device_services/include/keymap_model.h": "cd9889f0f32b7c2a721d8e020d8aa8a41f3f3d15f2a229aa9860dbccaf52cc3a",
+    "components/device_services/include/smart_actions.h": "692ffa5f33d8d8c4d34025f8e28d9d5f447eaa29bbc05967b38825cfb1924ab8"
+  },
+  "c_service_sha256": "baf2d2eba11ea27db081751f8d3833b57f0ff32e8194352c6f58bf666c3ed385",
+  "sdk_path": "C:/Users/zengzhi/AppData/Local/Programs/input/resources/app.asar.unpacked/node_modules/@worklouder/wl-device-kit/dist/index.js",
+  "sdk_sha256": "44eb6f5d140247b89ef282c72b714b1be98b7e6287e96fe916b25dde1c1f3dee",
+  "sdk_chunk_raw": 3072,
+  "profiles": 6,
+  "layers_per_profile": 6,
+  "keymap_bytes": 44800,
+  "smart_bytes": 137,
+  "calls": 74,
+  "checks": [
+    "SDK multifile transaction",
+    "3072-byte write/read chunks",
+    "six profiles and 36 layers",
+    "Input default RADIAL sectors",
+    "layer light DTO",
+    "macros/multitap/Smart references",
+    "byte-exact readback",
+    "invalid sector rollback"
+  ]
+}

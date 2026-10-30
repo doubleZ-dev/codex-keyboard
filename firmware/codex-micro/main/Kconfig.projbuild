@@ -1,0 +1,21 @@
+menu "Codex Micro board bring-up"
+config CODEX_MAINBOARD_BRINGUP
+    bool "Mainboard-only diagnostic firmware (no physical input reports)"
+    default y
+    help
+        Keep USB/CDC, raw input diagnostics and explicit USB firmware maintenance.
+        Disable business input reports, local gestures, BLE and lighting outputs.
+        Disable this only for a deliberately built full peripheral firmware.
+config CODEX_BOARD_SERVICES
+    bool "Enable config maintenance and BLE while physical inputs remain suppressed"
+    default y
+    help
+        Enables explicit configuration RPC, controlled reboot, Host state handling
+        and BLE bonding tests. Does not enable raw input actions or lighting output.
+config CODEX_USB_MICROPHONE
+    bool "INMP441 left-channel USB microphone (GPIO12/13/14, L/R grounded)"
+    default y
+    help
+        Append UAC2 microphone interfaces to HID+CDC. 48 kHz mono PCM16.
+        Independent of the switch/joystick diagnostic suppression policy.
+endmenu

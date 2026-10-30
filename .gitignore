@@ -1,0 +1,12 @@
+# Local tools and generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.host-tests/
+.host-tools/
+build/
+build-ascii/
+build-output/
+managed_components/
+sdkconfig.old
+.npm-cache/

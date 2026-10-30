@@ -1,0 +1,33 @@
+#pragma once
+#include <stdbool.h>
+#include <stdint.h>
+
+/* Hardware Interface v1.0, 2026-10-23. Physical positions, NOT AG/ACT IDs. */
+enum {
+    BOARD_ROW1 = 41, BOARD_ROW2 = 48, BOARD_ROW3 = 47, BOARD_ROW4 = 21,
+    BOARD_COL1 = 11, BOARD_COL2 = 10, BOARD_COL3 = 9, BOARD_COL4 = 4,
+    BOARD_ENCODER_A = 16, BOARD_ENCODER_B = 17, BOARD_ENCODER_SW = 18,
+    BOARD_JOYSTICK_X = 6, BOARD_JOYSTICK_Y = 7, BOARD_JOYSTICK_SW = 15,
+    BOARD_TOUCH = 5, BOARD_TOUCH_CHANNEL = 5,
+    BOARD_KEYS_RGB = 42, BOARD_AMBIENT_RGB = 38,
+    BOARD_STATUS1 = 39, BOARD_STATUS2 = 8, BOARD_STATUS3 = 40,
+    BOARD_BATTERY = 2,
+    BOARD_MIC_BCLK = 12, BOARD_MIC_DIN = 13, BOARD_MIC_WS = 14,
+    BOARD_USB_DM = 19, BOARD_USB_DP = 20, BOARD_BOOT = 0,
+    BOARD_ADC_UNIT = 1, BOARD_BATTERY_ADC_CHANNEL = 1,
+    BOARD_JOYSTICK_X_ADC_CHANNEL = 5, BOARD_JOYSTICK_Y_ADC_CHANNEL = 6,
+    BOARD_KEY_LED_COUNT = 13, BOARD_AMBIENT_LED_COUNT = 8,
+    BOARD_MATRIX_MASK = 0xEFF3,
+    BOARD_ENCODER_ROT_ID = 0x100, BOARD_ENCODER_SW_ID = 0x101,
+    BOARD_JOYSTICK_VECTOR_ID = 0x110, BOARD_JOYSTICK_SW_ID = 0x111,
+    BOARD_TOUCH_ID = 0x120,
+    BOARD_LOW_POWER_SUPPORTED = 0,
+    BOARD_CHARGE_STATUS_SUPPORTED = 0,
+    BOARD_POWER_SWITCH_INPUT_SUPPORTED = 0,
+    BOARD_VBUS_SENSE_SUPPORTED = 0
+};
+
+extern const uint8_t board_matrix_rows[4];
+extern const uint8_t board_matrix_cols[4];
+/* Validates static definition only; never configures pins or proves wiring. */
+bool board_definition_valid(void);

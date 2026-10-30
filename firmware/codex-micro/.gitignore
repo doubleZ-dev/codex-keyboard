@@ -1,0 +1,8 @@
+/build/
+/build-ascii/
+/build-output/
+/managed_components/
+/sdkconfig.old
+/.host-tests/
+/.host-tools/
+/__pycache__/

@@ -1,0 +1,212 @@
+{
+  "release_class": "Full USB/BLE development candidate; PCB/Host acceptance pending",
+  "firmware_mode": "full",
+  "chip": "esp32s3",
+  "flash_size": "16MB",
+  "hardware_tested": true,
+  "full_hardware_acceptance": false,
+  "runtime_validation": {
+    "version": "v1.0.0-rc.7",
+    "hardware_accessed": true,
+    "app_sha256": "f9b32206ae2bee4a72ac7dd67bd00a2e4532926162b71530b07a446ae3cce709",
+    "running_elf_sha256": "66bd39578f2edeafe408b6b3300be9e25f3ba63eaf184dd3d50dbab36dc93343",
+    "trial_confirmed": true,
+    "configuration_byte_exact_preserved": true,
+    "ble_paired_mask": 7,
+    "lighting_faults": 0,
+    "microphone_initialized": true,
+    "full_hardware_acceptance": false,
+    "physical_demo_user_result": "awaiting double FAST visual acceptance",
+    "ble_cold_boot_agent_result": "awaiting battery-only cold boot and actual official desktop double-Agent test",
+    "scope": "Actual CDC installation and software health/configuration/bond preservation; BLE field defect and new visual effect not yet accepted"
+  },
+  "images": [
+    {
+      "role": "bootloader",
+      "offset": "0x0",
+      "file": "bootloader.bin",
+      "bytes": 20912,
+      "sha256": "52e743551300366fadec721f909ef6ce70779c4d09c67377339d8cdcf7049163"
+    },
+    {
+      "role": "partition-table",
+      "offset": "0x8000",
+      "file": "partition-table.bin",
+      "bytes": 3072,
+      "sha256": "5b9f2b09eb14f1c013d3570957c2fb7d96c443167f854bd3f10f5a668fd865da"
+    },
+    {
+      "role": "app",
+      "offset": "0x10000",
+      "file": "firmware.bin",
+      "bytes": 746256,
+      "sha256": "f9b32206ae2bee4a72ac7dd67bd00a2e4532926162b71530b07a446ae3cce709"
+    },
+    {
+      "role": "ota-selection",
+      "offset": "0x610000",
+      "file": "ota_data_initial.bin",
+      "bytes": 8192,
+      "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f"
+    }
+  ],
+  "build_source_sha256": {
+    "main\\CMakeLists.txt": "6f840091bb5be6194cc4b4b45bd83e648e5d0ad6edd490bc66d5476d4cd0903c",
+    "main\\codex_micro_usb.c": "c1d6b35b59b540eead542a53eff836beb02d96164d11606033683b64d11ffea9",
+    "main\\idf_component.yml": "4d6d74e11802601c8ed5702c19e64b5b2bd0aaf8a0883633a4e463c827890f0a",
+    "main\\Kconfig.projbuild": "7990bab1053b066a0ee9fbc344bcc43966a6a5cce352c681a46b759d46b022f3",
+    "main\\keymap_default.h": "eb8ca4e3342da732b312ea5886fa4ef2d73f1c9c7839f3425a50b35a56c85455",
+    "components\\ble_transport\\ble_slot_policy.c": "a247ce380a6798919b746c015ac99b931334f5070e559850138f262a865f217d",
+    "components\\ble_transport\\ble_transport.c": "394c620430003c093d43025458b1a0a6ae92d5ba02d1ecfb06b89dce796493d0",
+    "components\\ble_transport\\CMakeLists.txt": "ce6d6acf106d447d0e04ec79e340bfdfc201dbb2c079b715e68c3fbf1696ee27",
+    "components\\ble_transport\\include\\ble_slot_policy.h": "3790d41531a16cafd21a74c119133a0399da3a03d920b3dbb10d418368717aa7",
+    "components\\ble_transport\\include\\ble_transport.h": "f41a3e6c4a9256e170993a36a87a47364ff833864cdfc4cc2926f28dc6521e3c",
+    "components\\board_io\\board_inputs.c": "d1430c6203e7f0dee3a48358629c50ea05f15ee0dc2709600f0dfb2bce689bb3",
+    "components\\board_io\\board_lights.c": "07cc074ebe82286afec83030bb71d7e364aac6ba59b83d6e6c9244836960b6bb",
+    "components\\board_io\\CMakeLists.txt": "5aae12c8592be31990a33511e451cc88ecbe37a4112e4bcef54f3bd0cac2deb4",
+    "components\\board_io\\include\\board_io.h": "3f8f3dc9fa4f6d74466592e5f3af79d544bea7b2b3aeebe3d16986f637d6ed3b",
+    "components\\config_store\\CMakeLists.txt": "ce1242b6efe6fe49bdd507113c464a74aa081eafafe0f35d5c6a79bfbd14c501",
+    "components\\config_store\\config_rpc.c": "2d608459428f2b9960d08a3dc6f269c5616e912d3855300c7e645dc651712673",
+    "components\\config_store\\config_store.c": "f3766f35dc1bad63db4d0b0add5128b5418f39150f874649e38e954e8c455252",
+    "components\\config_store\\include\\config_rpc.h": "f9743c9d6e1e7f7851eb8b294c5c2441f2fe60df86fbc5517495b2439876a72f",
+    "components\\config_store\\include\\config_store.h": "4911a7f3e5528ad2eb06253de4f1aad3108d0bf4ad0c0346421c905c21bb88dd",
+    "components\\device_services\\action_runtime.c": "b64012e62a6e7519b039d37f9105ed943a196f0e096b7928f986f338f399f999",
+    "components\\device_services\\CMakeLists.txt": "e476a6ff6e4bdb52cfa8ba6a6373250dc2d78939f8b52d451cbff1103917822a",
+    "components\\device_services\\hid_state.c": "9262a4deef58dd9ccf2a63969be45487e0d7b5ec4ff2562cb55e62d9d7fe66b4",
+    "components\\device_services\\include\\action_runtime.h": "2be031ea7fc4919a70ac2d97b907074e74f15875713c079fff04ee6efc906516",
+    "components\\device_services\\include\\hid_state.h": "77828887a2f975a73bc31705a503e0ac7052ed01b212e95faa52839cb92d3ff2",
+    "components\\device_services\\include\\key_codes.h": "27f2f8d9a1e1a84a35c1b3f042e7e1a52d9f01f21897004e184d00b43d5377cb",
+    "components\\device_services\\include\\keymap_model.h": "cd9889f0f32b7c2a721d8e020d8aa8a41f3f3d15f2a229aa9860dbccaf52cc3a",
+    "components\\device_services\\include\\layer_navigation.h": "6392f8f9adc55572c9073c203be53fd7b6848bfc1167ff1a05ba1050af67976a",
+    "components\\device_services\\include\\light_demo.h": "169cc159526a533e0703ffb3334f6cac3b5da2f419927814803ff502d2452610",
+    "components\\device_services\\include\\light_engine.h": "e8da06d0436ad2c1afac92b1e7019cc6e009dca23d295a8b989658b00d1eafc7",
+    "components\\device_services\\include\\radial_runtime.h": "460447e5d48df7c0ea10ef6b9035f314e072239350e8157b2cb3efc14d5b1786",
+    "components\\device_services\\include\\smart_actions.h": "692ffa5f33d8d8c4d34025f8e28d9d5f447eaa29bbc05967b38825cfb1924ab8",
+    "components\\device_services\\include\\stick_stream.h": "9f379c49531fe0c9ba1f5b8f4610a9014fb6083896cc21af9b479a884dbd732a",
+    "components\\device_services\\key_codes.c": "c24f2a41ec15f195aac0401f5e49b2ace80a1b1adae497d7e03fbb7260f2ac8a",
+    "components\\device_services\\keymap_model.c": "95ae51b1dd0f7a05b5f2f2a4e41554b0c48213d25bb2069f7d66568656f9db0c",
+    "components\\device_services\\layer_navigation.c": "347aea1cb0a8234e7499a87a9ebfe16691dabc3fe121ca9fcc2bc6c6a980da74",
+    "components\\device_services\\light_demo.c": "b303dda1cee02c054b4e51146f164a2c366ca162d11f5188cfff1a713cc6a0b1",
+    "components\\device_services\\light_engine.c": "c5380fa96d37b7da30f04bb12d283ebafa308374f505378c9953d232d29d79df",
+    "components\\device_services\\radial_runtime.c": "bc4285eb16da000514585dea73c6c2a1c6f0fe51db7dbd5c2d91511f9943a974",
+    "components\\device_services\\smart_actions.c": "c44dc70b49efe190b43c9fbd0d7594bf12bec9269bc04cb7379ce65eac43e9bc",
+    "components\\device_services\\stick_stream.c": "159ae4c1ac5e067ce49f05deaf3408011960d6340fc38f578280ff0764a9c787",
+    "components\\firmware_update\\CMakeLists.txt": "a6eaa776b83de0d3096abae1ce7656607e95546c3ea416bb52c1d6ded3c03068",
+    "components\\firmware_update\\firmware_update.c": "67a804636b794a990f28f4bfed589c7e38d024e1db91b5663cfea2b4cb400b6a",
+    "components\\firmware_update\\include\\firmware_update.h": "567256bc68a8c0a7b980ab27c86437d2014388d0e8f766dbabd28266908784ef",
+    "components\\firmware_update\\include\\update_engine.h": "b0f6113bc6b0268e88df3bbaeff049a270bce964534e64a265649daba44ad8f7",
+    "components\\firmware_update\\update_engine.c": "9c1833ae869679b60edbfef69fdbc1f518d57d6d3c5f80c4cf00773e5f61670f",
+    "components\\fw_foundation\\battery_monitor.c": "a00d4510b7de8fb7d18736ca57873275eaf4de83c0506db53b5cb51d924aa4c6",
+    "components\\fw_foundation\\board_definition.c": "28f2ce381731b971902b81d6220f27f8a9d81bc3809b9c183c3ad680ce9869e9",
+    "components\\fw_foundation\\CMakeLists.txt": "6bf1cff9a0dc4fb2d64ad5f527ab4ff75c2d23aa4c00def172e7a587ba789ae4",
+    "components\\fw_foundation\\default_actions.c": "c22884ef4d2e536d86a643eef5738dd75436ecaea4737a6672cc7f1812a3eaa3",
+    "components\\fw_foundation\\include\\battery_monitor.h": "9e199286c87cfc75299c63bbccd3db59c9a683c86d06a50342ac4e0267393bf6",
+    "components\\fw_foundation\\include\\board_definition.h": "956fedc212b658f5922274506f5f667dd0a9231b54237a2a4ae4ca5f4c07f59c",
+    "components\\fw_foundation\\include\\default_actions.h": "a08af81475f38182b84737e19baa0c725991a2d69b9df7309bda2569befdce8e",
+    "components\\fw_foundation\\include\\firmware_policy.h": "4b864354ce38cbd905c28526321a82fb201404e93f43b7207a59ec195c2c7a52",
+    "components\\fw_foundation\\include\\input_event.h": "116369795624dc724aeaf58a2268ffde2839dd0d0bc328100a501c9a802ec4a7",
+    "components\\fw_foundation\\include\\joystick_filter.h": "7f35a3c9b623248dc3222c76ab53dd440d3bd095c42165f1de7921f1d8b889d8",
+    "components\\fw_foundation\\include\\light_frame.h": "0ac75d202ef4a1bc8bd50ece5dcdf00dc7d3dc40608b7a60e849698034a0599c",
+    "components\\fw_foundation\\include\\matrix_debounce.h": "a0753811e6bf12f856268d68dc1137e506f8b5b9ca8c00e50e23401004064580",
+    "components\\fw_foundation\\joystick_filter.c": "5491d549bda40f34384249cce15eb218597ca4673cb59db51e6e3835d5ef1758",
+    "components\\fw_foundation\\matrix_debounce.c": "d994b3b42f13a68960ca8a94af48650fa1980e8e47f910c28271b3f0cd39f11f",
+    "components\\usb_microphone\\CMakeLists.txt": "388d90010d7c56e66aa6c7d236ecedccfc6f825ecb03b97697d862380a7fcfee",
+    "components\\usb_microphone\\include\\codex_audio_config.h": "96f3056ad577ea81142573b41883ad58b213534b320ca634843839369ad35257",
+    "components\\usb_microphone\\include\\microphone_pcm.h": "26b4c9358889fa2001c2f6ea556484b7e61a557350ab02fb2825753716816179",
+    "components\\usb_microphone\\include\\usb_microphone.h": "1add7a524150e83413cca1b4c01029e0168ef5cd40b2705b8fe2c1ecfbc89d08",
+    "components\\usb_microphone\\usb_microphone.c": "abaa5abb6ccf54ad07f6865edad9ef3bd69052ac58ffd9a48375bf3c2d68d51d",
+    "components\\usb_rpc\\CMakeLists.txt": "9e7d24f442255be16026a0353daf275867f7489593378d8e2413b01d93e9b9ba",
+    "components\\usb_rpc\\include\\maintenance_frame.h": "a4b8abf03faf0671d78dacf1c412b9d8195e69fe5cf0247e2bdb50419cab603a",
+    "components\\usb_rpc\\include\\usb_rpc.h": "30919e31fd6e817c4275ded8ecdb32025e90f4fa84c1d6f51306ae0178da9bb6",
+    "components\\usb_rpc\\maintenance_frame.c": "11a92166eab0659f0c7c2432f52aac3e358f2f9edadddb854edb7f2725049bb4",
+    "components\\usb_rpc\\usb_rpc.c": "d277367f5c9705b4237de718a17fc7c7bbaa97561151656371dcdb23941e81b8",
+    "CMakeLists.txt": "4c2b32ceff6b9395a952de7d74e7db383cf15cd511b1a3c19d3809181c2bd8f8",
+    "sdkconfig": "e652c0703334d7aef3482665dc3479b4239e37303cebcdd092d2e9302580630d",
+    "sdkconfig.defaults": "8eec0c153909a8d0c594b16a9ad7e7251c3814773c753f00d648f4db0ba94305",
+    "dependencies.lock": "420c8ab23febab4dcd7196e33772706d7d81f99a1cc43f2fcc5630ca66e83665",
+    "partitions.csv": "6a63a103c8d93f1a904873d4e4750f2b81c93b1cc64ae106bd25cbc7be60ff1f"
+  },
+  "verification": {
+    "hardware_accessed": false,
+    "running_device_verified": false,
+    "firmware_mode": "full",
+    "business_input_and_lighting_disabled": false,
+    "usb_microphone_enabled": true,
+    "build_status": "complete",
+    "sources_match": true,
+    "original_gate0_unchanged": true,
+    "elf_image_hash_matches": true,
+    "descriptors": {
+      "codex_device_descriptor": {
+        "length": 18,
+        "matches_gate0": false,
+        "additive_standard_hid": false,
+        "additive_audio": false,
+        "audio_iad_device": true
+      },
+      "codex_configuration_descriptor": {
+        "length": 250,
+        "matches_gate0": false,
+        "additive_standard_hid": false,
+        "additive_audio": true,
+        "audio_iad_device": false
+      },
+      "codex_report_descriptor": {
+        "length": 29,
+        "matches_gate0": true,
+        "additive_standard_hid": false,
+        "additive_audio": false,
+        "audio_iad_device": false
+      }
+    },
+    "bin_bytes": 746256,
+    "partitions": {
+      "nvs": [
+        1,
+        2,
+        36864,
+        24576
+      ],
+      "phy_init": [
+        1,
+        1,
+        61440,
+        4096
+      ],
+      "ota_0": [
+        0,
+        16,
+        65536,
+        3145728
+      ],
+      "ota_1": [
+        0,
+        17,
+        3211264,
+        3145728
+      ],
+      "otadata": [
+        1,
+        0,
+        6356992,
+        8192
+      ],
+      "config": [
+        1,
+        2,
+        6422528,
+        524288
+      ]
+    },
+    "artifact_sha256": {
+      "codex_micro_gate0a.bin": "f9b32206ae2bee4a72ac7dd67bd00a2e4532926162b71530b07a446ae3cce709",
+      "codex_micro_gate0a.elf": "66bd39578f2edeafe408b6b3300be9e25f3ba63eaf184dd3d50dbab36dc93343",
+      "codex_micro_gate0a.map": "a75afe098a30d831b45201a933d3b5d0b9bad1cbddb84b925f1c8ac4f9f469f3",
+      "bootloader/bootloader.bin": "52e743551300366fadec721f909ef6ce70779c4d09c67377339d8cdcf7049163",
+      "partition_table/partition-table.bin": "5b9f2b09eb14f1c013d3570957c2fb7d96c443167f854bd3f10f5a668fd865da",
+      "ota_data_initial.bin": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
+      "flasher_args.json": "bb37ce8a0f549d12f32121e2e957ca52cb66436c08ce5e210d1822c79c5c9f19",
+      "sdkconfig.generated": "0b46984b89fc0891bad21f940415295aac709f83bfb177835ff5224ddb8339ce"
+    }
+  }
+}
