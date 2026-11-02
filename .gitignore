@@ -10,3 +10,4 @@ build-output/
 managed_components/
 sdkconfig.old
 .npm-cache/
+my-backup/

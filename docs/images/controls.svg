@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="870" viewBox="0 0 1000 870" font-family="Microsoft YaHei, Noto Sans CJK SC, Arial, sans-serif" role="img" aria-labelledby="title desc">
+<title id="title">Codex Keyboard 控件位置示意</title>
+<desc id="desc">六个Agent键、四个功能键、宽麦克风键与独立发送键，左上旋钮、右上摇杆及下方触摸区。示意并非尺寸图。</desc>
+<rect x="0" y="0" width="1000" height="870" rx="18" fill="#f4f7f9" stroke="none"/>
+<text x="40" y="52" font-size="30" fill="#152a3a" text-anchor="start" font-weight="700">Codex Keyboard · 控件导览</text>
+<text x="40" y="85" font-size="18" fill="#526573" text-anchor="start" font-weight="400">面向键盘的示意位置；执行动作以当前映射为准。</text>
+<rect x="140" y="110" width="720" height="580" rx="40" fill="#6d9eb5" stroke="none"/>
+<rect x="166" y="131" width="668" height="530" rx="26" fill="#1e2933" stroke="none"/>
+<circle cx="250" cy="208" r="51" fill="#101820" stroke="#8aa2ad" stroke-width="3"/>
+<text x="250" y="216" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">旋钮</text>
+<circle cx="750" cy="208" r="44" fill="#101820" stroke="#8aa2ad" stroke-width="3"/>
+<text x="750" y="216" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">摇杆</text>
+<rect x="365" y="165" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="420" y="216" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG1</text>
+<rect x="525" y="165" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="580" y="216" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG2</text>
+<rect x="205" y="285" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="260" y="336" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG3</text>
+<rect x="365" y="285" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="420" y="336" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG4</text>
+<rect x="525" y="285" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="580" y="336" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG5</text>
+<rect x="685" y="285" width="110" height="86" rx="14" fill="#b1dce9" stroke="none"/>
+<text x="740" y="336" font-size="24" fill="#173b52" text-anchor="middle" font-weight="700">AG6</text>
+<rect x="205" y="401" width="110" height="76" rx="13" fill="#34424f" stroke="#70818c"/>
+<text x="260" y="447" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">演示</text>
+<rect x="365" y="401" width="110" height="76" rx="13" fill="#34424f" stroke="#70818c"/>
+<text x="420" y="447" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">批准</text>
+<rect x="525" y="401" width="110" height="76" rx="13" fill="#34424f" stroke="#70818c"/>
+<text x="580" y="447" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">拒绝</text>
+<rect x="685" y="401" width="110" height="76" rx="13" fill="#34424f" stroke="#70818c"/>
+<text x="740" y="447" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">新聊天</text>
+<rect x="205" y="507" width="430" height="80" rx="14" fill="#34424f" stroke="#70818c"/>
+<text x="420" y="556" font-size="23" fill="#fff" text-anchor="middle" font-weight="400">按住说话 · 松开转写</text>
+<rect x="685" y="507" width="110" height="80" rx="14" fill="#34424f" stroke="#70818c"/>
+<text x="740" y="556" font-size="22" fill="#fff" text-anchor="middle" font-weight="400">发送</text>
+<circle cx="220" cy="625" r="19" fill="#8ba0ac"/>
+<text x="253" y="633" font-size="18" fill="#dce7ed" text-anchor="start" font-weight="400">触摸区域</text>
+<text x="500" y="728" font-size="22" fill="#152a3a" text-anchor="middle" font-weight="400">6 个 Agent 键帽 + 6 个功能键帽 / 宽键下有两个开关</text>
+<text x="40" y="778" font-size="21" fill="#152a3a" text-anchor="start" font-weight="400">短触后松开：切换已有层。长触约 2 秒：切换 BLE 槽。</text>
+<text x="40" y="819" font-size="19" fill="#526573" text-anchor="start" font-weight="400">rc.7 的原 Fast 键用于灯效演示；示意图不是生产尺寸图。</text>
+</svg>
