@@ -18,7 +18,7 @@ Codex Keyboard 是一款参考 [Codex Micro](https://worklouder.cc/codex-micro) 
 | --- | --- |
 | 看功能、了解日常操作 | [使用说明与按键示意](docs/usage.md) |
 | 买齐零件、估算成本 | [BOM v0.96](hardware/Codex_Keyboard_开源BOM_v0.96.xlsx) · [成本与采购规格](docs/cost.md) |
-| 制作 PCB、核对接线 | [硬件说明](docs/hardware.md) · [嘉立创 EDA 工程](hardware/ProPrj_Codex_key_2026-10-20_10-08-15_2026-10-22.epro) |
+| 制作 PCB、核对接线 | [硬件说明](docs/hardware.md) · [嘉立创 EDA 工程](hardware/ProPrj_Codex_key_2026-10-20_10-08-15_2026-11-04.epro) |
 | 打印底座、支撑板和键帽 | [打印文件与参数](docs/printing.md) |
 | 按步骤组装 | [图文制作流程](docs/assembly.md) |
 | 给新板烧录固件 | [刷写与首次启动](docs/flashing.md) |
